@@ -13,7 +13,7 @@ public class Bank {
         }
     }
 
-    synchronized void booking(String employee, int accountnr, float amount) {
+    public void booking(String employee, int accountnr, float amount) {
         float oldBalance = accounts[accountnr].get();
         float newBalance = oldBalance + amount;
         accounts[accountnr].set(newBalance);
